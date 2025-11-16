@@ -9,22 +9,18 @@ The script automatically:
 
 
 🚀 Usage
-1.	Install Whisper:
-  pip install openai-whisper
-  pip install torch
+1.	Install Whisper.
 
 2.	Put your audio file in the same folder.
 
-3.	Run the script:
-  python3 transcriber.py
+3.	Run the script.
 
 5.	Your transcript will be saved automatically.
 
 
 ⚙️ Optional
 
-Force a specific language:
-  language="tr"  # or "en", "de", etc.
+Force a specific language.
 
 
 📄 License
