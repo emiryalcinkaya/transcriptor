@@ -1,28 +1,36 @@
-🎧 Whisper Transcription Script
+# 🎧 Whisper Transcription Script
 
-This is a simple Python script that uses OpenAI Whisper to transcribe audio files into text.
+A simple Python script that uses OpenAI Whisper to transcribe audio files into text automatically.
 
-The script automatically:
-	•	Detects the number in the filename (e.g., ders2.m4a)
-	•	Saves the result as transcript2.txt
-	•	Creates clean text output using the Whisper "medium" model
+The script:
+- Detects the number in the filename automatically  
+  *(example: `lecture2.m4a`)*
+- Saves the transcription as  
+  `transcript2.txt`
+- Generates clean text output using the Whisper `medium` model
 
+---
 
-🚀 Usage
-1.	Install Whisper.
+## 🚀 Usage
 
-2.	Put your audio file in the same folder.
+1. Install Whisper
+2. Place your audio file in the same folder as the script
+3. Run the script
+4. The transcription file will be created automatically
 
-3.	Run the script.
+---
 
-5.	Your transcript will be saved automatically.
+## ⚙️ Optional Features
 
+- Force a specific transcription language
+- Customize Whisper model selection
 
-⚙️ Optional
+---
 
-Force a specific language.
+## 📄 License
 
+This project is intended for personal and educational use.
 
-📄 License
+---
 
-Personal and educational use.
+## Developed by Emir Yalçınkaya
