@@ -1,11 +1,16 @@
 import whisper
 import re
+import os
 
 # Load the Whisper model
 model = whisper.load_model("medium")
 
 # Input file
 audio_path = input("Enter audio file name: ")
+
+if not os.path.exists(audio_path):
+    print("❌ File not found.")
+    exit()
 
 # Find the number in the file name
 match = re.search(r'\d+', audio_path)
