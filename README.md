@@ -1,36 +1,112 @@
-# 🎧 Whisper Transcription Script
+<div align="center">
 
-A simple Python script that uses OpenAI Whisper to transcribe audio files into text automatically.
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="120">
 
-The script:
-- Detects the number in the filename automatically  
-  *(example: `lecture2.m4a`)*
-- Saves the transcription as  
-  `transcript2.txt`
-- Generates clean text output using the Whisper `medium` model
+# 🎧 Whisper Audio Transcriptor
 
----
+<img src="https://img.shields.io/badge/Python-3.x-blue?logo=python">
+<img src="https://img.shields.io/badge/OpenAI-Whisper-412991">
+<img src="https://img.shields.io/badge/Status-Active-success">
 
-## 🚀 Usage
+A lightweight Python application that automatically converts audio files into text using OpenAI Whisper.
 
-1. Install Whisper
-2. Place your audio file in the same folder as the script
-3. Run the script
-4. The transcription file will be created automatically
+</div>
 
 ---
 
-## ⚙️ Optional Features
+## About
 
-- Force a specific transcription language
-- Customize Whisper model selection
+This project uses OpenAI Whisper to transcribe audio files into text.
 
----
-
-## 📄 License
-
-This project is intended for personal and educational use.
+The application automatically detects numbers in audio file names and generates matching transcript files. Users can select different Whisper models and transcription languages directly from the terminal.
 
 ---
 
-## Developed by Emir Yalçınkaya
+## Features
+
+- Audio-to-text transcription
+- OpenAI Whisper integration
+- Multiple Whisper model support
+- Multiple language support
+- Automatic transcript file naming
+- File existence validation
+- Simple terminal interface
+
+---
+
+## Requirements
+
+Install the required dependencies:
+
+```bash
+pip install openai-whisper
+```
+
+Install FFmpeg:
+
+### macOS
+
+```bash
+brew install ffmpeg
+```
+
+### Windows
+
+Download and install FFmpeg from:
+
+https://ffmpeg.org/download.html
+
+---
+
+## Usage
+
+Run the application:
+
+```bash
+python transcriptor.py
+```
+
+Example:
+
+```text
+Select model (tiny/base/small/medium/large): medium
+Enter audio file name: lecture2.m4a
+Select language (en/tr/de/fr): en
+```
+
+Generated output:
+
+```text
+transcript2.txt
+```
+
+---
+
+## Supported Models
+
+```text
+tiny
+base
+small
+medium
+large
+```
+
+---
+
+## Technologies Used
+
+- Python
+- OpenAI Whisper
+- FFmpeg
+- Regular Expressions (re)
+
+---
+
+## Author
+
+**Emir Yalçınkaya**
+
+Software Engineering Student
+
+GitHub: https://github.com/emiryalcinkaya
