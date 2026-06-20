@@ -5,7 +5,7 @@ import re
 model = whisper.load_model("medium")
 
 # Input file
-audio_path = "audio file name"
+audio_path = input("Enter audio file name: ")
 
 # Find the number in the file name
 match = re.search(r'\d+', audio_path)
